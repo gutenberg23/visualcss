@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useReducer, useEffect, ReactNode } from 'react';
 import { githubService, GitHubUser, Repository, FileContent } from '../services/github';
 
 interface GitHubState {

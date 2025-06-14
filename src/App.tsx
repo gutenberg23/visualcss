@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { EditorProvider } from './context/EditorContext';
 import { GitHubProvider } from './context/GitHubContext';
 import { Toolbar } from './components/Toolbar';
@@ -7,7 +7,7 @@ import { StylePanel } from './components/StylePanel';
 import { GitHubIntegration } from './components/GitHubIntegration';
 import { Button } from './components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import { Github, Palette, Code, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Github, Palette, ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from './lib/utils';
 import './App.css';
 

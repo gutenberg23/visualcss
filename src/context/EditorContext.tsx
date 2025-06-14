@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, ReactNode } from 'react'
+import { createContext, useContext, useReducer, useCallback, ReactNode } from 'react'
 import { EditorState, SelectedElement, StyleRule, HistoryState } from '../types'
 
 interface EditorContextType {

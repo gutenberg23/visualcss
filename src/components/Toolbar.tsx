@@ -1,10 +1,8 @@
-import React from 'react'
 import { useEditor } from '../context/EditorContext'
 import { Button } from './ui/button'
 import { Separator } from './ui/separator'
 import { Badge } from './ui/badge'
 import { Slider } from './ui/slider'
-import { Label } from './ui/label'
 import {
   Undo2,
   Redo2,
@@ -15,8 +13,7 @@ import {
   ZoomOut,
   Grid3X3,
   Eye,
-  Code,
-  Save
+  Code
 } from 'lucide-react'
 import { cn } from '../lib/utils'
 
@@ -28,7 +25,7 @@ interface ToolbarProps {
   showCodeView?: boolean
 }
 
-export function Toolbar({ className, onExport, onImport, onCodeView, showCodeView }: ToolbarProps) {
+export function Toolbar({ className, onExport, onImport, onCodeView }: ToolbarProps) {
   const {
     state,
     history,
