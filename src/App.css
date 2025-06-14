@@ -1,0 +1,63 @@
+/* App.css - Global styles for the Visual CSS Editor */
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  padding: 0.5rem 1rem;
+}
+
+.app-main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-footer {
+  border-top: 1px solid hsl(var(--border));
+  background: hsl(var(--muted) / 0.5);
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Preview container styles */
+.preview-container {
+  flex: 1;
+  overflow: auto;
+  background: hsl(var(--background));
+}
+
+/* Style panel styles */
+.style-panel {
+  width: 20rem;
+  border-left: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .style-panel {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+  }
+}
